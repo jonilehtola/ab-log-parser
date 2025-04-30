@@ -127,7 +127,7 @@ def extract_timestamp(log_line, timezone_offset=3):
     return timestamp.isoformat()
 
 def __main__():
-    parser = argparse.ArgumentParser(description='Parse Abitti log file and generate CSV report')
+    parser = argparse.ArgumentParser(description='Parse Abitti everything.log file and generate CSV report')
     parser.add_argument('--log', type=str, help='Path to the log file', required=True)
     parser.add_argument('--csv', type=str, help='Path to the output CSV file', required=True)
     parser.add_argument('--timezoneOffset', type=int, help='Timezone deviation', default='+3')
